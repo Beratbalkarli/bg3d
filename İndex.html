@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <title>BG 3D</title>
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('img/Bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: "Anta", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      flex-wrap: wrap;
+    }
+
+    .kutu1logo {
+      height: 45px;
+    }
+
+    .kutu1 {
+      margin: 1rem auto;
+      padding: 0;
+      width: 100%;
+      max-width: 1400px;
+      height: 60px;
+      background-color: #221F20;
+      color: whitesmoke;
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      box-shadow: 2px 2px 20px black;
+      font-weight: 500;
+    }
+
+    .kutu1 a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 20px;
+      transition: 0.5s;
+    }
+    .kutu1 a:hover {
+      color:rgb(231, 143, 61);
+    }
+
+    .baslik {
+      width: 90%;
+      max-width: 1200px;
+      height: 35px;
+      margin: 0 auto;
+      padding: 10px 0;
+      background-color: #221F20;
+      text-align: center;
+      border-radius: 45px;
+      font-size: 30px;
+      font-weight: 500;
+      color: whitesmoke;
+      box-shadow: 2px 2px 20px black;
+    }
+
+    .kutu2 {
+      width: 1200px;
+      max-width: 1200px;
+      height: 450px;
+      margin: 25px auto;
+      color: #514949;
+      display: flex;
+    }
+
+    .kutu2alt1 {
+      background-image: url('img/kutu2alt1.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 65%;
+      height: 450px;
+      box-shadow: 2px 2px 20px black;
+      filter: grayscale(100%);
+      transition: 1s;
+    }
+    .kutu2alt1:hover{
+      filter: grayscale(0%);
+    }
+
+    .kutu2alt2 {
+      background-color: #221F20;
+      width: 35%;
+      height: 410px;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 25px;
+      color: whitesmoke;
+      box-shadow: 2px 2px 20px black;
+    }
+
+    .kutu3 {
+      width: 1200px;
+      max-width: 1200px;
+      height: 400px;
+      display: flex;
+      margin: 0 auto 25px auto;
+    }
+
+    .kutu3alt1 {
+      width: 383.3px;
+      height: 400px;
+      margin: 0 10px 0 0;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      background-image: url(img/vazo2.jpg);
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(100%);
+      transition: 1s;
+    }
+
+    .kutu3alt1:hover{
+      filter: grayscale(0%);
+    }
+
+    .kutu3alt2 {
+      width: 716.3px;
+      height: 350px;
+      margin: 0 0 0 10px;
+      padding: 25px 40px;
+      background-color: #221F20;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      color: whitesmoke;
+      font-size: 18px;
+    }
+    .kutu3alt2ic{
+      width: 200px;
+      height:50px;
+      margin: 40px 0 0 0;
+      border-radius: 8px;
+      background:linear-gradient(45deg,#022222,#2aa7a7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 20px black;
+      color: #fff;
+      font-size: 20px;
+      transition: 0.5s;
+    }
+    .kutu3alt2ic:hover{
+      background:linear-gradient(45deg,#4f1919,#ff3333);
+      color:#fff;
+      font-size: 28px;
+      transition: 0.5s;
+    }
+
+      .kutu3devam{
+      width:1200px ;
+      height: 300px;
+      margin: 0 auto 25px auto;
+      display: flex;
+    }
+    .kutu3devam1{
+      width:383.3px;
+      height: 300px;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      background-image: url(img/vazo.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .kutu3devam2{
+      width:383.3px;
+      height: 300px;
+      margin:0 25px;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      background-image: url(img/kurt.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .kutu3devam3{
+      width:383.3px;
+      height: 300px;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      background-image: url(img/kedi.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .kutu4 {
+      width: 1200px;
+      height: 400px;
+      margin: 0 auto 25px auto;
+      display: flex;
+    }
+
+    .kutu4alt1 {
+      height: 400px;
+      width: 600px;
+      margin: 0 25px 0 0 ;
+      background-image: url(img/hak.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+    }
+
+    .kutu4alt2 {
+      height: 350px;
+      width: 503px;
+      padding: 25px 40px;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      background-color: #221F20;
+      color: whitesmoke;
+      font-size: 18px;
+    }
+
+    .kutu5 {
+      width: 1200px;
+      height: 150px;
+      margin: 0 auto 25px auto;
+      display: flex;
+    }
+
+    .kutu5instagram {
+      width: 350px;
+      height: 150px;
+      background-color: #221F20;
+      border-radius: 20px;
+      box-shadow: 2px 2px 20px black;
+      display: flex;
+    }
+
+    .kutu5instagramlogo {
+      width: 300px;
+      height: 100px;
+      background-image: url(img/instagramlogo2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 25px;
+      transition:1.2s;
+    }
+
+    .kutu5instagramlogo:hover {
+      background-image: url(img/instagramlogo1.png);
+    }
+
+    .kutu5instagramlogo a {
+      width: 200px;
+      height:60px;
+      padding:20px 0 20px 100px;
+      position: absolute;
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 500;
+      line-height: 30px;
+    }
+
+    .kutu5adres {
+      width: 495px;
+      height: 120px;
+      margin: 0 15px;
+      padding: 15px 25px;
+      border-radius: 20px;
+      background-color: #221F20;
+      box-shadow: 2px 2px 20px black;
+      color: whitesmoke;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .kutu5tel {
+      width: 225px;
+      height: 120px;
+      padding: 15px 25px;
+      border-radius: 20px;
+      background-color: #221F20;
+      box-shadow: 2px 2px 20px black;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 18px;
+      line-height: 33px;
+    }
+
+    .kutu5tel a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 20px;
+    }
+
+    .son {
+      width: 100%;
+      max-width: 1400px;
+      height: 40px;
+      margin: 0 auto;
+      background-color: #221F20;
+    }
+
+
+    /******************* TABLET GORUNUMU ********************/
+
+
+    @media (max-width:1024px){
+      
+    .kutu2 {
+      width: 90%;
+      max-width: 1200px;
+      height: 850px;
+      display: block;
+    }
+
+    .kutu2alt1 {
+      width: 90%;
+      height: 450px;
+      margin:0 auto 10px auto;
+      border-radius: 15px;
+    }
+
+    .kutu2alt2 {
+      width: 90%;
+      height: 350px;
+      margin:0 auto;
+      border-radius: 15px;
+    }
+
+    .kutu3 {
+      width: 90%;
+      max-width: 1200px;
+      height: 400px;
+    }
+
+    .kutu3alt1 {
+     width: 0;
+     height: 0;
+    }
+
+    .kutu3alt2 {
+      width: 100%;
+      height: 350px;
+      margin:0 auto;
+    }
+
+    .kutu3devam{
+      width:100%;
+      max-width: 792px;
+      height: 620px;
+      margin: 0 auto 25px auto;
+      flex-wrap: wrap;
+    }
+
+    .kutu3devam1{
+      width:383.3px;
+      height: 300px;
+      margin:0 25px 0 0;
+    }
+
+    .kutu3devam2{
+      width:383.3px;
+      height: 300px;
+      margin:0;
+    }
+
+    .kutu3devam3{
+      width:383.3px;
+      height: 300px;
+      margin:25px 25px 0 0;
+    
+    }
+    .kutu3devam4{
+      width:383.3px;
+      height: 300px;
+      margin:25px 0 0 0 ;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      background-image: url(img/vazo.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .kutu4 {
+      width: 605px;
+      max-width: 1200px;
+      height: 825px;
+      margin: 0 auto 25px auto;
+      flex-wrap: wrap;
+    }
+
+    .kutu4alt1 {
+      height: 400px;
+      width: 605px;
+      margin: 0 auto;
+    }
+
+    .kutu4alt2 {
+      height: 350px;
+      width: 523px;
+      margin: 25px 0 0 0;
+    }
+
+    .kutu5 {
+      width: 545px;
+      height: 480px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .kutu5instagram {
+      width: 545px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    .kutu5instagramlogo{
+      margin: auto auto;
+    }
+
+    .kutu5adres {
+      width: 495px;
+      height: 120px;
+      margin: 0 auto;
+    }
+
+    .kutu5tel {
+      width: 225px;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+
+
+
+
+
+  }
+    /******************* TABLET GORUNUMU BITIS ********************/
+
+
+    /******************* TELEFON GORUNUMU BASLANGIC ********************/
+
+    @media (max-width:792px) {
+      
+      .kutu1logo{
+        height: 0;
+      }
+
+      .baslik{
+        height: 100px;
+      }
+
+      .kutu2 {
+      width: 90%;
+      max-width: 1200px;
+      height: 970px;
+      display: block;
+    }
+
+    .kutu2alt1 {
+      width: 90%;
+      height: 450px;
+      margin:0 auto 10px auto;
+      border-radius: 15px;
+    }
+
+    .kutu2alt2 {
+      width: 70%;
+      height: 470px;
+      margin:0 auto;
+      border-radius: 15px;
+    }
+    .kutu2alt2 h4{
+      margin: 25px 0;
+    }
+
+    .kutu3 {
+      width: 90%;
+      max-width: 1200px;
+      height: 600px;
+    }
+
+    .kutu3alt1 {
+     width: 0;
+     height: 0;
+    }
+
+    .kutu3alt2 {
+      width: 100%;
+      height: 550px;
+      margin:0 auto;
+    }
+
+    .kutu3devam{
+      width:100%;
+      max-width: 405px;
+      height: 1275px;
+      margin: 0 auto 25px auto;
+      flex-wrap: wrap;
+    }
+
+    .kutu3devam1{
+      width:383.3px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    .kutu3devam2{
+      width:383.3px;
+      height: 300px;
+      margin:25px auto 0 auto;
+    }
+
+    .kutu3devam3{
+      width:383.3px;
+      height: 300px;
+      margin:25px auto 0 auto;
+    }
+    .kutu3devam4{
+      width:383.3px;
+      height: 300px;
+      margin:25px auto 0 auto;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 15px;
+      background-image: url(img/vazo.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .kutu4 {
+      width: 405px;
+      max-width: 1200px;
+      height: 950px;
+      margin: 0 auto 25px auto;
+      
+    }
+
+    .kutu4alt1 {
+      width: 405px;
+      height: 400px;
+      margin: 0 auto;
+    }
+
+    .kutu4alt2 {
+      width: 323px;
+      height: 475px;
+      margin: 25px auto 0 auto;
+    }
+
+    .kutu5 {
+      width: 405px;
+      height: 540px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .kutu5instagram {
+      width: 405px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    .kutu5instagramlogo{
+      margin: auto auto;
+    }
+
+    .kutu5adres {
+      width: 355px;
+      height: 180px;
+      margin: 0 auto;
+    }
+
+    .kutu5tel {
+      width: 225px;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+
+    }
+
+    /******************* TELEFON GORUNUMU BITIS ********************/
+      
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="kutu1">
+    <img src="img/fontlogo.png" alt="" class="kutu1logo">
+    <a href="#kutu2">Anasayfa</a>
+    <a href="#kutu3">Market</a>
+    <a href="#kutu4alt2">Hakkımızda</a>
+    <a href="#kutu5">İletişim</a>
+  </div>
+
+  <div class="baslik">
+    Hoş Geldiniz! 3D Dünyasının Büyüsüne Adım Atın!
+  </div>
+
+  <a name="kutu2"><div class="kutu2">
+    <div class="kutu2alt1">
+
+    </div>
+    <div class="kutu2alt2">
+      <br>Merhaba!<br>Bizler BG 3D Özel Tasarım,<br><br>
+      benzersiz ve özel 3D yazıcı baskılarıyla sizlere sanatı, teknolojiyi ve yaratıcılığı bir araya getiren bir
+      platform sunuyoruz. Her bir baskımız, tasarım ve kaliteye önem veren bir ekip tarafından özenle üretilip sizlere
+      sunulmaktadır.
+    </div>
+  </div></a>
+
+  <a name="kutu3"><div class="kutu3">
+      <div class="kutu3alt1"></div>
+      <div class="kutu3alt2">
+        <font style="font-size: 24px; line-height: 33px; font-weight: 500; color:rgb(169, 209, 236)">Kişisel Dokunuşlarınızla Şekillendirin</font><br>
+        Sunduğumuz geniş ürün yelpazesi arasında,
+        ev dekorasyonundan teknoloji <br> aksesuarlarına kadar birçok kategoride özel 3D baskılar bulabilirsiniz.
+        Kendi <br> tasarımlarınızı yükleyerek veya koleksiyonumuzdan seçerek,
+       ürünlerinizi <br> kişiselleştirebilir ve benzersiz bir dokunuş ekleyebilirsiniz. 
+       <br><br><font style="font-size: 24px; font-weight: 500; line-height: 33px; color:rgb(169, 209, 236)"> Teknoloji ve Kalite Bir Arada</font><br>
+       3D yazıcılarımız en son teknolojiye sahiptir ve her detayı titizlikle işler. <br>
+       Ürünlerimiz, dayanıklılık ve estetik açıdan yüksek standartları <br> karşılamak 
+       için özel malzemeler kullanılarak üretilir.
+       <a href="https://www.shopier.com/ShowProductNew/storefront.php?shop=bg3dozeltasarim&sid=UFZsc3haMVFTSmgyaVZuaTBfLTFfIF8g " target="_blank" style="text-decoration: none;"><div class="kutu3alt2ic">
+        Market
+       </div></a>
+      </div>
+  </div></a>
+
+  <div class="kutu3devam">
+    <div class="kutu3devam1"></div>
+    <div class="kutu3devam2"></div>
+    <div class="kutu3devam3"></div>
+    <div class="kutu3devam4"></div>
+  </div></a>
+
+  <div class="kutu4">
+    <div class="kutu4alt1">
+
+    </div>
+    <a name="kutu4alt2"><div class="kutu4alt2">
+      <font style="font-size: 24px; font-weight: 500; line-height: 33px; color:rgb(169, 209, 236)">BG 3D Özel Tasarım,</font><br>
+      sürdürülebilirlik ilkelerine bağlıdır.
+      Geri dönüştürülebilir malzemeler kullanarak çevre dostu ürünler sunuyor ve
+      doğal kaynakları koruma konusundaki sorumluluğumuzu önemsiyoruz. <br><br>
+      <font style="font-size: 24px; font-weight: 500; line-height: 33px; color:rgb(169, 209, 236)">Neden Biz?</font><br>
+
+      - Özelleştirilebilir ve benzersiz ürün yelpazesi. <br>
+      - En son teknolojiye sahip 3D yazıcılar. <br>
+      - Kaliteli malzeme ve detaylara özel özen. <br>
+      - Hızlı teslimat ve müşteri memnuniyeti odaklı hizmet. <br><br>
+
+      <b style="font-weight: 500; font-size: 20px; color:rgb(169, 209, 236)">Sorularınız veya özel talepleriniz için bizimle iletişime geçmekten çekinmeyin.
+      Sizleri 3D dünyamıza davet etmekten mutluluk duyuyoruz!</b>
+    </div></a>
+  </div>
+
+  <a name="kutu5"><div class="kutu5">
+    <div class="kutu5instagram" >
+      <div class="kutu5instagramlogo" >
+          <a href="https://www.instagram.com/bgozeltasarim?igsh=bTd1bWVzaTBzOWJ6 " target="_blank">İNSTAGRAM ADRESİMİZ </a>
+      </div>
+    </div>
+    <div class="kutu5adres">
+      !! ZİYARETİNİZ İÇİN TEŞEKKÜRLER !! <br>
+
+      BİZLERE BURADAN 7/24 GÖNÜL RAHATLIĞI İLE ULAŞABİLİR VE ÖZEL SİPARİŞLERİNİZİ VEREBİLİRSİNİZ.
+      YALNIZCA WhatsApp ÜZERİNDEN İLETİŞİME GEÇİNİZ.
+    </div>
+    <div class="kutu5tel">
+      İLETİŞİM
+      <br>
+      <a href="tel:+905324494737">+90 532 449 4737</a>
+      <br>
+      <a href="tel:+905399229594">+90 539 922 9594</a>
+    </div>
+  </div>
+
+  <div class="son">
+
+  </div>
+
+
+</body>
+
+</html>
